@@ -33,6 +33,9 @@ nav{
     display: none;
     align-items: center;
 }
+#close {
+    display: none;
+}
 
 #my-photo{
    display: flex;
@@ -116,10 +119,9 @@ p{
 /* media query */
 
 @media (max-width:375px)  {
-   
     #my-photo img {
         height: 350px;
-        margin: 30px 0px 0px 50px;
+        margin: 30px 0px 0px 30px;
     }
     #my-photo .hitesh {
         font-size: 60px;
@@ -182,6 +184,7 @@ p{
         right: -300px;
         height: 100vh;
         padding: 40px 0 0 0px;
+        transition: 0.5s ;
     }
     nav.active{
         right: 0px;
@@ -209,7 +212,15 @@ p{
     #mobile i{
         color: #1a1a1a;
         font-size: 26px;
-        padding:20px 30px 0px 0px;
+        padding:20px 50px 0px 0px;
+    }
+    #close{
+        position: absolute;
+        top: 25px;
+        left: 30px;
+        color: #fff;
+        font-size: 26px;
+        display: block;
     }
     /* navigation */
 }
