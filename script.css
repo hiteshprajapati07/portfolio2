@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fff;
+}
+.navigation{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px;
+}
+nav{
+    background-color: #222;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 1px black ;
+}
+.navigation .nav-unordered{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.navigation .nav-unordered li{
+    padding: 10px 20px;
+}
+.navigation .nav-unordered li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+#mobile{
+    display: none;
+    align-items: center;
+}
+
+#my-photo{
+   display: flex;
+   /* justify-content: center; */
+   /* border: 1px solid white; */
+   position: relative;
+}
+#my-photo img{
+    height: 100%;
+    border-radius: 50%;
+    z-index: 1;
+    /* opacity: 10; */
+    box-shadow: 10px 10px 1px 1px #222;
+}
+#my-photo .my-name{
+    border: 1px solid rgb(171, 114, 114);
+    width: 0;
+}
+#my-photo .hitesh{
+    color: rgb(252, 62, 94);
+    font-size: 120px;
+    position: absolute;
+    left: 450px;
+    text-shadow: 2px 1px 1px black;
+    font-family: cursive;
+}
+#my-photo .prajapati{
+    color: rgb(62, 166, 252);
+    font-size: 130px;
+    position: absolute;
+    left: 470px;
+    top: 140px;
+    letter-spacing: 20px;
+    text-shadow: 2px 1px 1px black;
+    font-family: cursive;
+}
+/* #my-photo .hitesh{
+    color: rgb(230, 252, 62);
+    font-size: 130px;
+    position: absolute;
+    left: 500px;
+    top: 300px;
+    letter-spacing: 50px;
+    z-index: 2;
+    text-shadow: 1px 1px 1px white;
+    font-family: cursive;
+} */
+#social-ids{
+    position: relative;
+    bottom: 0px;
+    margin: 10px 480px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px black;
+    padding: 10px 0px;
+}
+#social-ids #tags{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid; */
+    list-style: none;
+    /* padding: 10px 0px; */
+}
+#social-ids #tags li{
+    background-color: #222;
+    border-radius: 4px;
+    margin: 0px 5px;
+    padding: 0 10px;
+    box-shadow: 1px 1px 1px 1px white ;
+}
+#social-ids #tags li a{
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+}
+p{
+    text-align: center;
+    margin: 20px 0px;
+}
+
+/* media query */
+
+@media (max-width:375px)  {
+   
+    #my-photo img {
+        height: 350px;
+        margin: 30px 0px 0px 50px;
+    }
+    #my-photo .hitesh {
+        font-size: 60px;
+        position: absolute;
+        left: 80px;
+        top: 100%;
+    }
+    #my-photo .prajapati {
+        font-size: 60px;
+        left: 50px;
+        top: 115%;
+        letter-spacing: 0px;
+    }
+    #social-ids{
+        position: relative;
+        bottom: -170px;
+        left: -300px;
+        margin: 0 480px;
+        /* border: 1px solid black; */
+        border-radius: 10px;
+        box-shadow: 1px 1px 10px black;
+        padding: 0px 0px;
+    }
+    #social-ids #tags{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* border: 1px solid; */
+        list-style: none;
+        /* padding: 10px 0px; */
+    }
+    #social-ids #tags li{
+        background-color: #222;
+        border-radius: 4px;
+        margin: 10px 5px;
+        padding: 0 20px;
+        box-shadow: 1px 1px 1px 1px white ;
+    }
+    #social-ids #tags li a{
+        text-decoration: none;
+        font-size: 20px;
+        color: #fff;
+    }
+    p{
+    font-size: 14px ;
+    position: absolute;
+    bottom: -140px;
+    margin: -60px 0px;
+    left: 50px;
+    padding: 20px 0px;
+    }
+
+    /* navigation */
+    nav{
+        width: 200px;
+        position: fixed;
+        z-index: 3;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        padding: 40px 0 0 0px;
+    }
+    nav.active{
+        right: 0px;
+    }
+    .navigation {
+        justify-content: right;
+        /* position: relative;
+        top: 0px;
+        right: 0px;
+        height: 50vh; */
+        
+    }
+    .navigation .nav-unordered{
+       flex-direction: column;
+       align-items: flex-start;
+    }
+    .navigation .nav-unordered li{
+        padding: 20px 30px;
+    }
+
+    #mobile{
+        display: flex;
+        align-items: center;
+    }
+    #mobile i{
+        color: #1a1a1a;
+        font-size: 26px;
+        padding:20px 30px 0px 0px;
+    }
+    /* navigation */
+}
+
+/* media query */
