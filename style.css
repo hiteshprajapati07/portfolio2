@@ -226,3 +226,116 @@ p{
 }
 
 /* media query */
+
+
+
+/* media query */
+
+@media (min-width:1080px) and (max-width:2400)  {
+    #my-photo img {
+        height: 350px;
+        margin: 30px 0px 0px 30px;
+    }
+    #my-photo .hitesh {
+        font-size: 60px;
+        position: absolute;
+        left: 80px;
+        top: 100%;
+    }
+    #my-photo .prajapati {
+        font-size: 60px;
+        left: 50px;
+        top: 115%;
+        letter-spacing: 0px;
+    }
+    #social-ids{
+        position: relative;
+        bottom: -170px;
+        left: -300px;
+        margin: 0 480px;
+        /* border: 1px solid black; */
+        border-radius: 10px;
+        box-shadow: 1px 1px 10px black;
+        padding: 0px 0px;
+    }
+    #social-ids #tags{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* border: 1px solid; */
+        list-style: none;
+        /* padding: 10px 0px; */
+    }
+    #social-ids #tags li{
+        background-color: #222;
+        border-radius: 4px;
+        margin: 10px 5px;
+        padding: 0 20px;
+        box-shadow: 1px 1px 1px 1px white ;
+    }
+    #social-ids #tags li a{
+        text-decoration: none;
+        font-size: 20px;
+        color: #fff;
+    }
+    p{
+    font-size: 14px ;
+    position: absolute;
+    bottom: -140px;
+    margin: -60px 0px;
+    left: 50px;
+    padding: 20px 0px;
+    }
+
+    /* navigation */
+    nav{
+        width: 200px;
+        position: fixed;
+        z-index: 3;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        padding: 40px 0 0 0px;
+        transition: 0.5s ;
+    }
+    nav.active{
+        right: 0px;
+    }
+    .navigation {
+        justify-content: right;
+        /* position: relative;
+        top: 0px;
+        right: 0px;
+        height: 50vh; */
+        
+    }
+    .navigation .nav-unordered{
+       flex-direction: column;
+       align-items: flex-start;
+    }
+    .navigation .nav-unordered li{
+        padding: 20px 30px;
+    }
+
+    #mobile{
+        display: flex;
+        align-items: center;
+    }
+    #mobile i{
+        color: #1a1a1a;
+        font-size: 26px;
+        padding:20px 50px 0px 0px;
+    }
+    #close{
+        position: absolute;
+        top: 25px;
+        left: 30px;
+        color: #fff;
+        font-size: 26px;
+        display: block;
+    }
+    /* navigation */
+}
+
+/* media query */
